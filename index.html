@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Rita Silva - Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -14,7 +16,7 @@
 				<li>•</li>
 				<li><a href="about.html">Sobre mim</a></li>
 				<li>•</li>
-				<li><a href="#">Contatos</a></li>
+				<li><a href="contacts.html">Contatos</a></li>
 			</ul>
 		</div>
 		<div class="bolas"></div>
@@ -22,10 +24,12 @@
 
 	<div class="intro">
 		<div class="etiquetas-wrapper">
+			<div id="container">
+				<div id="animate"><h1>Olá!</h1></div>
+			</div>
 			<div class="intro-wrapper">
-				<h1>Olá!</h1>
 				<p>O meu nome é Rita Silva, e sou <br> uma jovem designer residente no Porto.</p>
-				<button>Saber mais</button>
+				<button onclick="window.open('about.html','_blank')">Saber mais</button>
 			</div>
 			<img id="etiqueta1" src="imagens/etiqueta1.png">
 			<img id="etiqueta2" src="imagens/etiqueta2.png">
@@ -35,6 +39,22 @@
 			<img id="etiqueta5" src="imagens/etiqueta5.png">
 		</div>
 	</div>
+
+	<!--<div class="intro">
+		<div class="etiquetas-wrapper">
+			<div class="intro-wrapper">
+				<h1>Olá!</h1>
+				<p>O meu nome é Rita Silva, e sou <br> uma jovem designer residente no Porto.</p>
+				<button onclick="window.open('about.html','_blank')">Saber mais</button>
+			</div>
+			<img id="etiqueta1" src="imagens/etiqueta1.png">
+			<img id="etiqueta2" src="imagens/etiqueta2.png">
+			<img id="etiqueta3" src="imagens/etiqueta3.png">
+			<img id="etiqueta4" src="imagens/etiqueta4.png">
+			<img id="etiqueta6" src="imagens/etiqueta6.png">
+			<img id="etiqueta5" src="imagens/etiqueta5.png">
+		</div>
+	</div>-->
 
 	<div class="index-categorias">
 		<div class="posts">
@@ -54,11 +74,16 @@
 				<span class="posts-categorias">Edição de Vídeo</span>
 			</div>
 		</div>
-		<p class="p-categorias">Pode observar mais detalhadamente os meus projetos <span class="p-link">&nbsp;aqui.</span></p>
+		<p class="p-categorias">Pode observar mais detalhadamente os meus projetos&nbsp;<a class="p-link" href="portfolio.html" target="_blank">aqui.</span></p>
 	</div>
 
 	<div class="footer">
 		<p>Website made by Rita Silva</p>
 	</div>
 	
+	<script src="script.js" type="text/javascript"></script>
+	<script type="text/javascript">window.onload=myMove</script>
+
 </body>
+
+</html>
