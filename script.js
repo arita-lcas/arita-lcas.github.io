@@ -59,3 +59,22 @@ function myMove() {
 		}
 	}
 }
+
+
+
+function portfolioTab() {
+	window.open("portfolio.html", "_self");
+}
+
+
+function contacts(element) {
+	let url = '';
+	if (element == 'behance') {
+		url = 'https://www.behance.net/aritalcas';
+	} else if (element == 'email') {
+		url = 'mailto:arita.lcas@gmail.com';
+	} else if (element == 'linkedin') {
+		url = 'https://www.linkedin.com/in/aritalcas/';
+	}
+	window.open(url, '_blank');
+}

@@ -13,7 +13,7 @@ div.header{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	height: 150px;
+	height: 15.5vh;
 	/*background-color: lightyellow;*/
 	background-color: #6D8886;
 	position: sticky;
@@ -36,7 +36,8 @@ div.header{
 	display: flex;
   	justify-content: space-between;
   	position: relative;
-  	top: 73px;
+  	top: 50%;
+  	z-index: 2;
 
 }
 
@@ -82,7 +83,7 @@ div.bolas{
 
 .etiquetas-wrapper{
 	box-sizing: border-box;
-	height: 100vh;
+	height: 90vh;
 	width: 58%;
 	position: absolute;
 	left: 21%;
@@ -205,8 +206,11 @@ div.bolas{
 /*categorias*/
 
 .index-categorias{
-	height: 75vh;
+	box-sizing: border-box;
+	/*height: 90vh;*/
 	background-color: white;
+	padding-top: 9%;
+	padding-bottom: 5%;
 	/*background-image: url("imagens/papel.png")*/
 }
 
@@ -214,7 +218,6 @@ div.bolas{
 	display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 170px;
     margin-bottom: 65px;
 }
 
@@ -225,7 +228,7 @@ div.bolas{
 	height: 430px;
 	border-top: 6px solid #BCBCBC;
 	border-bottom: 6px solid #BCBCBC;
-	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.65);
+	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.55);
 }
 
 .post1{
@@ -245,7 +248,7 @@ div.bolas{
 	height: 482px;
 	border-top: 6px solid #BCBCBC;
 	border-bottom: 6px solid #BCBCBC;
-	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.65);
+	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.55);
 	transform: scale(0.85);
 }
 
@@ -328,6 +331,7 @@ div.bolas{
 
 .footer{
 	background-color: #F0F1F2;
+	box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.20);
 
 }
 
@@ -346,7 +350,8 @@ div.bolas{
 /*ABOUT PAGE */
 
 .about{
-	height: 90vh;
+	padding-top: 6%;
+	padding-bottom: 6%;
 	display: flex;
 	justify-content: center;
 }
@@ -361,66 +366,89 @@ div.bolas{
 .about-group{
 	box-sizing: border-box;
 	background-color: #F0F1F2;
-	width: 620px; 
-	height: 650px;
 	border-top: 6px solid #BCBCBC;
 	border-bottom: 6px solid #BCBCBC;
 	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.65);
-	margin-right: 40px;
-	margin-left: 65px;
+	margin-right: 2.5%;
+	margin-left: 4%;
 	transform: rotate(-1deg) scale(0.8);
+	padding-right: 2.5%;
+	padding-left: 2.5%;
 }
 
 .about-img{
 	display: flex;
 	justify-content: center;
-	margin-top: 47px;
-	height: 492px;
+	margin-top: 9%;
+	margin-bottom: -11%;
 	opacity: 85%;
 }
 
 .about-img img{
 	object-fit: contain;
+	width: 100%;
+	height: auto;
 }
 
 .about-text{
 	color: #303030;
+	width: 52%;
 }
 
 .about-text p{
 	font-family: 'Josefin Slab', serif;
-	font-size: 28px;
+	/*font-size: 28px;*/
+	font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
+
+/*.about-text p{
+	font-family: 'Josefin Slab', serif;
+	font-size: 28px;
+	font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+	font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));	
+	font-size: 1.45vw;
+}*/
 
 .about-text .h1{
 	font-family: 'Itim', cursive;
-	font-size: 72px;
+	/*font-size: 72px;*/
+	font-size: 3.7vw;
 	margin: 0;
 }
 
 .about-fita1{
 	opacity: 60%;
-	transform: translateX(-102px) translateY(-638px) rotate(-30deg);
+	transform: translateX(-25%) translateY(-736%) rotate(-30deg);
 }
 
 .about-fita2{
 	opacity: 60%;
-	transform: translateX(439px) translateY(-163px) rotate(-36deg);
+	transform: translateX(75%) translateY(-109%) rotate(-36deg);
+}
+
+.about-fita1 img{
+	object-fit: contain;
+	width: 40.8%;
+	height: auto;
+}
+
+.about-fita2 img{
+	object-fit: contain;
+	width: 40.8%;
+	height: auto;
 }
 
 .about-sep{
-	width: 117px;
-	height: 4px;
+	width: 6vw;
+	height: 0.209vw;
 	background-color: #DAAB62;
 }
 
-.skills .about-sep{
-	margin-top: 35px;
-	margin-bottom: 75px;
-}
-
 .skills{
-	height: 90vh;
+	/*height: 90vh;*/
+	padding-top: 8%;
+	padding-bottom: 7%;
 	background-color: #F0F1F2;
 	display: flex;
 	justify-content: center;
@@ -432,7 +460,14 @@ div.bolas{
 
 .skills-wrapper{
 	box-sizing: border-box;
-	width: 80%;
+	/*width: 65%;*/
+}
+
+.skills-wrapper .h1{
+	font-family: 'Itim', cursive;
+	/*font-size: 60px;*/
+	font-size: calc(14px + (51 - 14) * ((100vw - 300px) / (1600 - 300)));
+	margin: 0;
 }
 
 .h1{
@@ -441,22 +476,51 @@ div.bolas{
 	margin: 0;
 }
 
+.skills-sep{
+	width: 6.7vw;
+	height: 0.261vw;
+	background-color: #DAAB62;
+	margin-top: 35px;
+	margin-bottom: 75px;
+}
+
 .skills-grid{
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-row-gap: 20px ;
+	grid-row-gap: 20px;
+	/*grid-column-gap: 240px;*/
+	grid-column-gap: 12.5vw;
 }
 
 .individual-grid{
 	display: grid;
-	grid-template-columns: 80px 195px 156px;
+	/*grid-template-columns: 80px 195px 156px;*/
+	grid-template-columns: auto 45% auto;
 	align-items: center;
 	grid-column-gap: 15px;
 }
 
+.individual-grid img{
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
+
+.individual-grid span{
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+	font-size: calc(14px + (31 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .footer-about{
 	background-color: white;
+	box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.10);
 }
+
+/*.individual-grid img{
+	transform: scale(0.95);
+}*/
 
 
 
@@ -488,7 +552,7 @@ div.bolas{
 
 .projects-wrapper{
 	box-sizing: border-box;
-	width: 58%;
+	/*width: 59%;*/
 	margin-bottom: 80px;
 }
 
@@ -554,7 +618,11 @@ div.bolas{
 /* CONTACTS PAGE */
 
 .contacts-group{
-	height: 61vh;
+	/*height: 65vh;*/
+	display: flex;
+	justify-content: center;
+	padding-top: 10%;
+	padding-bottom: 8%;
 	background-color: white;
 	/*background-image: url("imagens/papel.png")*/
 }
@@ -563,8 +631,9 @@ div.bolas{
 	display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 138px;
-    margin-bottom: 65px;
+    width: 80%;
+    /*margin-top: 190px;
+    margin-bottom: 65px;*/
 }
 
 .contact1, .contact3{
@@ -574,8 +643,9 @@ div.bolas{
 	height: 430px;
 	border-top: 6px solid #BCBCBC;
 	border-bottom: 6px solid #BCBCBC;
-	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.65);
+	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.55);
 	background-image: url("imagens/note.png");
+	padding-bottom: 10%;
 }
 
 .contact1{
@@ -595,9 +665,10 @@ div.bolas{
 	height: 482px;
 	border-top: 6px solid #BCBCBC;
 	border-bottom: 6px solid #BCBCBC;
-	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.65);
+	box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.55);
 	transform: scale(0.85);
 	background-image: url("imagens/note.png");
+	padding-bottom: 14%;
 }
 
 .contacts-header{
@@ -638,7 +709,7 @@ div.bolas{
 }
 
 .contact2-fita{
-	margin-left: 30%;
+	margin-left: 28%;
 	margin-bottom: -88px;
 	opacity: 50%;
 	transform: translateY(-50px);
