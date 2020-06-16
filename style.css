@@ -102,8 +102,9 @@ div.bolas{
 #container{
 	position: relative;
 	top: -7vh;
-	height: 407px;
+	/*height: 407px;*/
 	width: 200px;
+	height: 47%;
 }
 
 #animate{
@@ -143,7 +144,7 @@ div.bolas{
 
 .intro-wrapper p{
 	font-family: 'Itim', cursive;
-	font-size: 30px;
+	font-size: calc(14px + (26.9 - 14) * ((100vw - 300px) / (1600 - 300)));
 	color: #303030;
 }
 
@@ -151,56 +152,61 @@ div.bolas{
 	display: block;
 	font-family: 'Itim', cursive;
 	font-weight: normal;
-	font-size: 35px;
+	font-size: calc(14px + (26.9 - 14) * ((100vw - 300px) / (1600 - 300)));
 	color: white;
 	background-color: #DBAB61;
 	border: none;
 	border-radius: 35px;
-	padding: 13px 18px;
-	margin-top: 70px;
+	/*padding: 13px 18px;*/
+	padding: 2% 3%;
+	margin-top: 10.5%;
+}
+
+.etiquetas-wrapper img{
+	object-fit: contain;
+	height: auto;
 }
 
 #etiqueta1{
 	position: absolute;
-	right: 49.5%;
-	top: -6vh;
-	transform: scale(0.8,0.8);
-
+	right: 50.3%;
+	top: -2vh;
+	width: 8.5%;
 }
 
 #etiqueta2{
 	position: absolute;
-	right: 38%;
-	top: -15.5vh;
-	transform: scale(0.8,0.8);
+	right: 39.2%;
+	top: -11.5vh;
+	width: 10%;
 }
 
 #etiqueta3{
 	position: absolute;
-	right: 18.8%;
-	top: -10.5vh;
-	transform: scale(0.8,0.8);
+	right: 21.3%;
+	top: -0.5vh;
+	width: 19%;
 }
 
 #etiqueta4{
 	position: absolute;
-	right: 17%;
-	top: -10vh;
-	transform: scale(0.8,0.8);
+	right: 18.5%;
+	top: -3.5vh;
+	width: 11.5%;
 }
 
 #etiqueta5{
 	position: absolute;
-	right: -0.5%;
-	top: -10.5vh;
-	transform: scale(0.8,0.8);
+	right: 0.6%;
+	top: -6.5vh;
+	width: 8.6%;
 }
 
 #etiqueta6{
 	position: absolute;
-	right: -3.2%;
-	top: 14.5vh;
-	transform: scale(0.8,0.8);
+	right: -1.6%;
+	top: 18vh;
+	width: 13%;
 }
 
 

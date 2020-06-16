@@ -49,6 +49,20 @@ function enableScroll(event) {
 function myMove() {
 	var elem = document.getElementById("animate");
 	var pos = 0;
+	var id = setInterval(frame, 6);
+	function frame() {
+		if (pos == 82) {
+			clearInterval(id);
+		} else {
+			pos++;
+			elem.style.top = pos + "%";
+		}
+	}
+}
+
+/*function myMove() {
+	var elem = document.getElementById("animate");
+	var pos = 0;
 	var id = setInterval(frame, 0.1);
 	function frame() {
 		if (pos == 320) {
@@ -58,7 +72,7 @@ function myMove() {
 			elem.style.top = pos + "px";
 		}
 	}
-}
+}*/
 
 
 
