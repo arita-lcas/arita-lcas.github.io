@@ -83,6 +83,19 @@ div.bolas{
 	background-color: #F0F1F2;
 }
 
+.intro .arrow{
+	position: absolute;
+	right: 2%;
+	bottom: 4%;
+	height: 5vh;
+}
+
+.arrow img{
+	object-fit: contain;
+	height: 100%;
+	width: auto;
+}
+
 .etiquetas-wrapper{
 	box-sizing: border-box;
 	height: 90vh;
@@ -91,26 +104,45 @@ div.bolas{
 	left: 21%;
 }
 
+
+
 .etiquetas-wrapper h1{
+	font-family: 'Itim', cursive;
+	font-weight: normal;
+	font-size: calc(14px + (60.5 - 14) * ((100vw - 300px) / (1600 - 300)));
+	color: #303030;
+	margin: 0;
+}
+
+/* ANIMAÇÃO OLÁ*/
+
+/*#ola {
+	animation-name: ola;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	position: absolute;
+	top: -45vh;
+}
+
+@keyframes ola {
+	0% {top:-45vh;}
+	70% {top:-7.2vh;}
+	80% {top:-7.8vh;}
+	100%{top:-7.5vh;}
+}*/
+
+
+/*.etiquetas-wrapper h1{
 	font-family: 'Itim', cursive;
 	font-weight: normal;
 	font-size: calc(14px + (60.5 - 14) * ((100vw - 300px) / (1600 - 300)));
 	color: #303030;
 	margin-top: 0;
 	margin-bottom: 1px;
-}
+}*/
 
-#container{
-	position: relative;
-	top: -7vh;
-	/*height: 407px;*/
-	width: 200px;
-	height: 47%;
-}
 
-#animate{
-	position: absolute;
-}
 
 .intro-wrapper{
 	box-sizing: border-box;
@@ -118,8 +150,19 @@ div.bolas{
 	width: 58%;
 	text-align: left;
 	position: absolute;
-	top: 35vh;
+	top: 27.5vh;
+	padding-top: 3vh;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
 }
+
+@keyframes fadein {
+	from {opacity: 0; padding-top: 3vh;}
+	to {opacity: 1; padding-top: 0;}
+}
+
 
 
 
@@ -147,6 +190,7 @@ div.bolas{
 	font-family: 'Itim', cursive;
 	font-size: calc(14px + (26.9 - 14) * ((100vw - 300px) / (1600 - 300)));
 	color: #303030;
+	margin-top: 17px;
 }
 
 .intro-wrapper button{
@@ -162,6 +206,7 @@ div.bolas{
 	padding: 2% 3%;
 	margin-top: 10.5%;
 	cursor: pointer;
+	transition: 0.3s;
 }
 
 .etiquetas-wrapper img{
@@ -175,6 +220,33 @@ div.bolas{
 	top: -2vh;
 	width: 8.5%;
 }
+
+
+
+.etiquetas-reverse:hover{
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-direction: reverse;
+}
+
+.etiquetas:hover{
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+@keyframes rotate{
+	0% {transform: rotate(0); transform-origin: top center;}
+	25% {transform: rotate(3deg); transform-origin: top center;}
+	75% {transform: rotate(-3deg); transform-origin: top center;}
+	100% {transform: rotate(0deg); transform-origin: top center;}
+}
+
+
+
 
 #etiqueta2{
 	position: absolute;
@@ -379,8 +451,11 @@ div.bolas{
 /*ABOUT PAGE */
 
 .about{
-	padding-top: 6%;
-	padding-bottom: 6%;
+	/*padding-top: 6%;
+	padding-bottom: 6%;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height: 80vh;
 	display: flex;
 	justify-content: center;
 }
@@ -686,9 +761,9 @@ div.bolas{
 .projeto p{
 	text-align: center;
 	font-family: 'Josefin Slab', serif;
-	font-size: 20px;
+	font-size: calc(14px + (18.9 - 14) * ((100vw - 300px) / (1600 - 300)));
 	color: #303030;
-	margin: 50px;
+	margin: 3.5% 15%;
 }
 
 .projeto .video{

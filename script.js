@@ -46,35 +46,6 @@ function enableScroll(event) {
 
 
 
-function myMove() {
-	var elem = document.getElementById("animate");
-	var pos = 0;
-	var id = setInterval(frame, 6);
-	function frame() {
-		if (pos == 82) {
-			clearInterval(id);
-		} else {
-			pos++;
-			elem.style.top = pos + "%";
-		}
-	}
-}
-
-/*function myMove() {
-	var elem = document.getElementById("animate");
-	var pos = 0;
-	var id = setInterval(frame, 0.1);
-	function frame() {
-		if (pos == 320) {
-			clearInterval(id);
-		} else {
-			pos++;
-			elem.style.top = pos + "px";
-		}
-	}
-}*/
-
-
 
 function portfolioTab() {
 	window.open("portfolio.html", "_self");
@@ -91,4 +62,9 @@ function contacts(element) {
 		url = 'https://www.linkedin.com/in/aritalcas/';
 	}
 	window.open(url, '_blank');
+}
+
+
+function ignoreClick(event){
+	event.stopPropagation();
 }
