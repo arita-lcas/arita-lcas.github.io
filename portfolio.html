@@ -4,21 +4,27 @@
 <head>
 	<title>Rita Silva - Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="imagens/favicon.jpg">
 </head>
 
 <body>
 
 	<div id="subBody">
 		<div class="header">
+			<div class="lang-selector">
+				<span class="lang-pt" onclick="changeToPT()">PT</span>
+				<span class="lang-sep">|</span>
+				<span class="lang-en" onclick="changeToEN()">EN</span>
+			</div>
 			<div class="header-wrapper">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a onclick="changeToPage('index');" id="home-header-portfolio"></a></li>
 					<li>•</li>
-					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a onclick="changeToPage('portfolio');" id="portfolio-header-portfolio"></a></li>
 					<li>•</li>
-					<li><a href="about.html">About me</a></li>
+					<li><a onclick="changeToPage('about');" id="aboutme-header-portfolio"></a></li>
 					<li>•</li>
-					<li><a href="contacts.html">Contacts</a></li>
+					<li><a onclick="changeToPage('contacts');" id="contacts-header-portfolio"></a></li>
 				</ul>
 			</div>
 			<div class="bolas"></div>
@@ -26,8 +32,8 @@
 
 		<div class="description">
 			<div class="description-wrapper">
-				<p class="h1">Projects</p>
-				<p class="p-categorias">Here you can find some of my projects, which encompass several areas <br> of design - from graphic, animations and videos, to products.</p>
+				<p class="h1" id="projects-h1"></p>
+				<p class="p-categorias" id="projects-description"></p>
 				<div class="about-sep"></div>
 			</div>
 		</div>
@@ -37,104 +43,104 @@
 				<div class="projects-grid">
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• My time at Portia •</span>
-								<span class="img-hover-description">Gameplay concept trailer</span>
+								<span class="img-hover-title" id="project1-title"></span>
+								<span class="img-hover-description" id="project1-subtitle"></span>
 							</div>
 							<img id="img1" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto1.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Bates Motel •</span>
-								<span class="img-hover-description">Animation</span>
+								<span class="img-hover-title" id="project2-title"></span>
+								<span class="img-hover-description" id="project2-subtitle"></span>
 							</div>
 							<img id="img2" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto2.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Birthday Invitation •</span>
-								<span class="img-hover-description">Animation</span>
+								<span class="img-hover-title" id="project3-title"></span>
+								<span class="img-hover-description" id="project3-subtitle"></span>
 							</div>
 							<img id="img3" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto3.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Behance banner •</span>
-								<span class="img-hover-description">Animation</span>
+								<span class="img-hover-title" id="project4-title"></span>
+								<span class="img-hover-description" id="project4-subtitle"></span>
 							</div>
 							<img id="img4" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto4.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Wild berries cookies •</span>
-								<span class="img-hover-description">Concept packaging</span>
+								<span class="img-hover-title" id="project5-title"></span>
+								<span class="img-hover-description" id="project5-subtitle"></span>
 							</div>
 							<img id="img5" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto5.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Space Camp •</span>
-								<span class="img-hover-description">Logo Design</span>
+								<span class="img-hover-title" id="project6-title"></span>
+								<span class="img-hover-description" id="project6-subtitle"></span>
 							</div>
 							<img id="img6" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto6.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Make their dreams <br> come true •</span>
-								<span class="img-hover-description">Adoption poster</span>
+								<span class="img-hover-title" id="project7-title"></span>
+								<span class="img-hover-description" id="project7-subtitle"></span>
 							</div>
 							<img id="img7" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto7.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Aurora •</span>
-								<span class="img-hover-description">Single Cover</span>
+								<span class="img-hover-title" id="project8-title"></span>
+								<span class="img-hover-description" id="project8-subtitle"></span>
 							</div>
 							<img id="img8" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto8.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Anne of <br> Green Gables •</span>
-								<span class="img-hover-description">Poster Design</span>
+								<span class="img-hover-title" id="project9-title"></span>
+								<span class="img-hover-description" id="project9-subtitle"></span>
 							</div>
 							<img id="img9" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto9.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Viriato •</span>
-								<span class="img-hover-description">Wine bottle + packaging</span>
+								<span class="img-hover-title" id="project10-title"></span>
+								<span class="img-hover-description" id="project10-subtitle"></span>
 							</div>
 							<img id="img10" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto10.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• "Os últimos 8" •</span>
-								<span class="img-hover-description">Board game</span>
+								<span class="img-hover-title" id="project11-title"></span>
+								<span class="img-hover-description" id="project11-subtitle"></span>
 							</div>
 							<img id="img11" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto11.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Bouncing Stroller •</span>
-								<span class="img-hover-description">Product Design</span>
+								<span class="img-hover-title" id="project12-title"></span>
+								<span class="img-hover-description" id="project12-subtitle"></span>
 							</div>
 							<img id="img12" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto12.png">
 						</div>
 
 						<div class="img-hover">
 							<div class="img-hover-text">
-								<span class="img-hover-title">• Leather Satchel •</span>
-								<span class="img-hover-description">3D modelling exercise</span>
+								<span class="img-hover-title" id="project13-title"></span>
+								<span class="img-hover-description" id="project13-subtitle"></span>
 							</div>
 							<img id="img13" class="projects-images" onclick="showPopup(event); disableScroll(event);" src="imagens/projeto13.png">
 						</div>
@@ -143,7 +149,7 @@
 		</div>
 
 		<div class="footer">
-			<p>Website made by Rita Silva</p>
+			<p>Website made by&nbsp;<a href="https://www.linkedin.com/in/aritalcas/" target="_blank">Rita Silva</a></p>
 		</div>
 	</div>
 
@@ -157,10 +163,10 @@
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
 					<div class="video">
-						<iframe width="1423" height="800" src="https://www.youtube.com/embed/SQo25ouq3Q4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="1423" height="800" id="project1-iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<p>My Time at Portia concept gameplay trailer</p>
-					<p>The game clips and song used belong to Pathea Games. The footage was made by filming my own gameplay.</p>
+					<p id="project1-description1"></p>
+					<p id="project1-description2"></p>
 				</div>
 			</div>
 		</div>
@@ -172,10 +178,10 @@
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
 					<div class="video">
-						<iframe width="1423" height="800" src="https://www.youtube.com/embed/fe4Cnj6lMVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="1423" height="800" id="project2-iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<img src="imagens/bates-motel.jpg">
-					<p>Illustration and animation inspired by Norman Bates' house, from the Bates Motel tv series.</p>
+					<img id="project2-img">
+					<p id="project2-description"></p>
 				</div>
 			</div>
 		</div>
@@ -187,14 +193,10 @@
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
 					<div class="video">
-						<iframe width="1080" height="720" src="https://www.youtube.com/embed/8qrXrWXwcFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="1080" height="720" id="project3-iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<p>Animated birthday party invitation. The artwork used for this animation belongs to Freepik.</p>
-					<p><b>Sounds used:</b>
-					<br>
-					<br>https://freesound.org/people/acclivity/sounds/25880/
-					<br>https://freesound.org/people/Hitrison/sounds/216675/
-					<br>https://freesound.org/people/felix.blume/sounds/384218/</p>
+					<p id="project3-description"></p>
+					<p id="project3-credit"></p>
 				</div>
 			</div>
 		</div>
@@ -206,9 +208,9 @@
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
 					<div class="video">
-						<img src="imagens/rita-silva-gif.gif">
+						<img id="project4-img">
 					</div>
-					<p>Animated logo developed for personal branding.</p>
+					<p id="project4-description"></p>
 				</div>
 			</div>
 		</div>
@@ -219,9 +221,9 @@
 		<div class="popup" id="project5" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/cookies-packaging-1.jpg">
-					<img src="imagens/cookies-packaging-2.jpg">
-					<p>Concept packaging design for premium wild berries cookies.</p>
+					<img id="project5-img1">
+					<img id="project5-img2">
+					<p id="project5-description"></p>
 				</div>
 			</div>
 		</div>
@@ -232,8 +234,8 @@
 		<div class="popup" id="project6" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/spacecamp1.jpg">
-					<img src="imagens/spacecamp2.jpg">
+					<img id="project6-img1">
+					<img id="project6-img2">
 				</div>
 			</div>
 		</div>
@@ -244,7 +246,7 @@
 		<div class="popup" id="project7" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/adoption-poster.jpg">
+					<img id="project7-img">
 				</div>
 			</div>
 		</div>
@@ -255,7 +257,7 @@
 		<div class="popup" id="project8" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/aurora.jpg">
+					<img id="project8-img">
 				</div>
 			</div>
 		</div>
@@ -266,7 +268,7 @@
 		<div class="popup" id="project9" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/anne-green-gables.jpg">
+					<img id="project9-img">
 				</div>
 			</div>
 		</div>
@@ -277,15 +279,15 @@
 		<div class="popup" id="project10" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/viriato1.jpg">
-					<img src="imagens/viriato2.jpg">
-					<img src="imagens/viriato3.jpg">
-					<img src="imagens/viriato4.jpg">
-					<img src="imagens/viriato5.jpg">
-					<img src="imagens/viriato6.jpg">
-					<img src="imagens/viriato7.jpg">
-					<img src="imagens/viriato8.jpg">
-					<img src="imagens/viriato9.jpg">
+					<img id="project10-img1">
+					<img id="project10-img2">
+					<img id="project10-img3">
+					<img id="project10-img4">
+					<img id="project10-img5">
+					<img id="project10-img6">
+					<img id="project10-img7">
+					<img id="project10-img8">
+					<img id="project10-img9">
 				</div>
 			</div>
 		</div>
@@ -296,21 +298,21 @@
 		<div class="popup" id="project11" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/boardgame1.jpg">
-					<img src="imagens/boardgame2.jpg">
-					<img src="imagens/boardgame3.jpg">
-					<img src="imagens/boardgame4.jpg">
-					<img src="imagens/boardgame5.jpg">
-					<img src="imagens/boardgame6.jpg">
-					<img src="imagens/boardgame7.jpg">
-					<img src="imagens/boardgame8.jpg">
-					<img src="imagens/boardgame9.jpg">
-					<img src="imagens/boardgame10.jpg">
-					<img src="imagens/boardgame11.jpg">
-					<img src="imagens/boardgame12.jpg">
-					<img src="imagens/boardgame13.jpg">
-					<img src="imagens/boardgame14.jpg">
-					<img src="imagens/boardgame15.jpg">
+					<img id="project11-img1">
+					<img id="project11-img2">
+					<img id="project11-img3">
+					<img id="project11-img4">
+					<img id="project11-img5">
+					<img id="project11-img6">
+					<img id="project11-img7">
+					<img id="project11-img8">
+					<img id="project11-img9">
+					<img id="project11-img10">
+					<img id="project11-img11">
+					<img id="project11-img12">
+					<img id="project11-img13">
+					<img id="project11-img14">
+					<img id="project11-img15">
 				</div>
 			</div>
 		</div>
@@ -321,15 +323,15 @@
 		<div class="popup" id="project12" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/stroller1.jpg">
-					<img src="imagens/stroller2.jpg">
-					<img src="imagens/stroller3.jpg">
-					<img src="imagens/stroller4.jpg">
-					<img src="imagens/stroller5.jpg">
-					<img src="imagens/stroller6.jpg">
-					<img src="imagens/stroller7.jpg">
-					<img src="imagens/stroller8.jpg">
-					<img src="imagens/stroller9.jpg">
+					<img id="project12-img1">
+					<img id="project12-img2">
+					<img id="project12-img3">
+					<img id="project12-img4">
+					<img id="project12-img5">
+					<img id="project12-img6">
+					<img id="project12-img7">
+					<img id="project12-img8">
+					<img id="project12-img9">
 				</div>
 			</div>
 		</div>
@@ -340,9 +342,9 @@
 		<div class="popup" id="project13" onclick="enableScroll(event); hidePopup(event);">
 			<div class="content" onclick="ignoreClick(event);">
 				<div class="projeto">
-					<img src="imagens/handbag1.jpg">
-					<img src="imagens/handbag2.jpg">
-					<p>Satchel based in the designs of the brand The Leather Satchel Co (https://www.leathersatchel.com/). The design wasn’t created by me and was simply used as an exercise of 3D modeling with the software Marvelous Designer.</p>
+					<img id="project13-img1">
+					<img id="project13-img2">
+					<p id="project13-description"></p>
 				</div>
 			</div>
 		</div>
@@ -351,6 +353,7 @@
 
 
 	<script src="script.js" type="text/javascript"></script>
+	<script type="text/javascript">window.onload = portfolioTranslate;</script>
 
 </body>
 

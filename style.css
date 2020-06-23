@@ -22,6 +22,30 @@ div.header{
 	z-index: 1;
 }
 
+.lang-selector{
+	position: absolute;
+	font-family: 'Itim', cursive;
+	color: white;
+	font-size: calc(14px + (22.9 - 14) * ((100vw - 300px) / (1600 - 300)));
+	top: 17%;
+	right: 1.8%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 5vw;
+}
+
+.lang-sep{
+	font-size: calc(14px + (19.9 - 14) * ((100vw - 300px) / (1600 - 300)));
+	margin: 0 14%;
+}
+
+
+.lang-pt:hover, .lang-en:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 .header-wrapper{
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -64,6 +88,7 @@ div.header{
 .header a:hover {
 	text-decoration: underline;
 	color: white;
+	cursor: pointer;
 }
 
 div.bolas{
@@ -129,36 +154,6 @@ div.bolas{
 	color: #303030;
 	margin: 0;
 }
-
-/* ANIMAÇÃO OLÁ*/
-
-/*#ola {
-	animation-name: ola;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	animation-fill-mode: forwards;
-	position: absolute;
-	top: -45vh;
-}
-
-@keyframes ola {
-	0% {top:-45vh;}
-	70% {top:-7.2vh;}
-	80% {top:-7.8vh;}
-	100%{top:-7.5vh;}
-}*/
-
-
-/*.etiquetas-wrapper h1{
-	font-family: 'Itim', cursive;
-	font-weight: normal;
-	font-size: calc(14px + (60.5 - 14) * ((100vw - 300px) / (1600 - 300)));
-	color: #303030;
-	margin-top: 0;
-	margin-bottom: 1px;
-}*/
-
-
 
 .intro-wrapper{
 	box-sizing: border-box;
@@ -239,29 +234,45 @@ div.bolas{
 
 
 
-.etiquetas-reverse:hover{
+.etiquetas-reverse.animation{
 	animation-name: rotate;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-timing-function: ease;
 	animation-direction: reverse;
+	animation-fill-mode: both;
 }
 
-.etiquetas:hover{
+.etiquetas.animation{
 	animation-name: rotate;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+.etiquetas-less.animation{
+	animation-name: rotateless;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-direction: reverse;
+	animation-fill-mode: both;
 }
 
 @keyframes rotate{
-	0% {transform: rotate(0); transform-origin: top center;}
+	0% {transform: rotate(0deg); transform-origin: top center;}
 	25% {transform: rotate(3deg); transform-origin: top center;}
 	75% {transform: rotate(-3deg); transform-origin: top center;}
-	100% {transform: rotate(0deg); transform-origin: top center;}
+	100% {transform: rotate(-0.1deg); transform-origin: top center;}
 }
 
-
+@keyframes rotateless{
+	0% {transform: rotate(0); transform-origin: top center;}
+	25% {transform: rotate(1.5deg); transform-origin: top center;}
+	75% {transform: rotate(-1.5deg); transform-origin: top center;}
+	100% {transform: rotate(0deg); transform-origin: top center;}
+}
 
 
 #etiqueta2{
@@ -335,7 +346,7 @@ div.bolas{
 .post1, .post3{
 	box-sizing: border-box;
 	background-color: #F0F1F2;
-	/*width: 440px; 
+	/*width: 440px;
 	height: 430px;*/
 	padding-bottom: 0.5%;
 	padding-left: 1.5%;
@@ -359,7 +370,7 @@ div.bolas{
 	background-color: #F0F1F2;
 	margin-left: -1%;
 	margin-right: -1%;
-	/*width: 503px; 
+	/*width: 503px;
 	height: 482px;*/
 	padding-bottom: 0.5%;
 	padding-left: 1.5%;
@@ -482,6 +493,22 @@ div.bolas{
     margin: 0;
 }
 
+.footer a:link {
+	padding: 2px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #303030;
+}
+
+.footer a:visited {
+	color: #303030;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	color: #303030;
+}
+
 
 
 /*ABOUT PAGE */
@@ -546,7 +573,7 @@ div.bolas{
 	font-size: 28px;
 	font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 	font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));	
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 	font-size: 1.45vw;
 }*/
 
@@ -798,6 +825,21 @@ div.bolas{
 	cursor: auto;
 }
 
+.content a:link {
+	cursor: pointer;
+	text-decoration: none;
+	color: #303030;
+}
+
+.content a:visited {
+	color: #303030;
+}
+
+.content a:hover {
+	text-decoration: underline;
+	color: #303030;
+}
+
 .projeto img{
 	width: 100%;
 }
@@ -854,7 +896,7 @@ div.bolas{
 .contact1, .contact3{
 	box-sizing: border-box;
 	background-color: #F0F1F2;
-	/*width: 440px; 
+	/*width: 440px;
 	height: 430px;*/
 	width: 29%;
 	height: 88%;
@@ -880,7 +922,7 @@ div.bolas{
 	background-color: #F0F1F2;
 	margin-left: -15px;
 	margin-right: -15px;
-	/*width: 503px; 
+	/*width: 503px;
 	height: 482px;*/
 	width: 33%;
 	height: 97%;
