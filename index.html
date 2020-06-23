@@ -3,21 +3,20 @@
 <head>
 	<title>Rita Silva - Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="imagens/favicon.jpg">
+	<link rel="icon" href="images/favicon.jpg">
 </head>
 
 <body>
 
 	<div class="header">
 		<div class="lang-selector">
-			<span class="lang-pt" onclick="changeToPT()">PT</span>
+			<span class="lang-pt" id="lang-pt-index" onclick="changeToPT()">PT</span>
 			<span class="lang-sep">|</span>
-			<span class="lang-en" onclick="changeToEN()">EN</span>
+			<span class="lang-en" id="lang-en-index" onclick="changeToEN()">EN</span>
 		</div>
 		<div class="header-wrapper">
+			<div class="home-header" onclick="changeToPage('index');"><img src="images/logo-alt3.png"></div>
 			<ul>
-				<li><a onclick="changeToPage('index');" id="home-header-index"></a></li>
-				<li>•</li>
 				<li><a onclick="changeToPage('portfolio');" id="portfolio-header-index"></a></li>
 				<li>•</li>
 				<li><a onclick="changeToPage('about');" id="aboutme-header-index"></a></li>
@@ -25,55 +24,56 @@
 				<li><a onclick="changeToPage('contacts');" id="contacts-header-index"></a></li>
 			</ul>
 		</div>
-		<div class="bolas"></div>
+		<div class="circles"></div>
 	</div>
 
 	<div class="intro">
 		<div class="arrow">
-			<a href="#index-anchor"><img src="imagens/arrow.png"></a>
+			<a href="#index-anchor"><img src="images/arrow.png"></a>
 		</div>
-		<div class="etiquetas-wrapper">
+		<div class="tags-wrapper">
 			<div class="intro-wrapper">
 				<div><h1 id="hello"></h1></div>
 				<p id="intro-text"></p>
 				<button onclick="changeToPage('about');" id="intro-button"></button>
 			</div>
-			<img id="etiqueta1" onmouseover="animateTag(event);" class="etiquetas" src="imagens/etiqueta1.png">
-			<img id="etiqueta2" onmouseover="animateTag(event);" class="etiquetas-reverse" src="imagens/etiqueta2.png">
-			<img id="etiqueta3" onmouseover="animateTag(event);" class="etiquetas" src="imagens/etiqueta3.png">
-			<img id="etiqueta4" onmouseover="animateTag(event);" class="etiquetas-reverse" src="imagens/etiqueta4.png">
-			<img id="etiqueta6" onmouseover="animateTag(event);" class="etiquetas" src="imagens/etiqueta6.png">
-			<img id="etiqueta5" onmouseover="animateTag(event);" class="etiquetas-less" src="imagens/etiqueta5.png">
+			<img id="tag1" onmouseover="animateTag(event);" class="tags" src="images/tag1.png">
+			<img id="tag2" onmouseover="animateTag(event);" class="tags-reverse" src="images/tag2.png">
+			<img id="tag3" onmouseover="animateTag(event);" class="tags" src="images/tag3.png">
+			<img id="tag4" onmouseover="animateTag(event);" class="tags-reverse" src="images/tag4.png">
+			<img id="tag6" onmouseover="animateTag(event);" class="tags" src="images/tag6.png">
+			<img id="tag5" onmouseover="animateTag(event);" class="tags-less" src="images/tag5.png">
 		</div>
 	</div>
 
-	<div class="index-categorias">
+	<div class="index-categories">
 		<div id="index-anchor"></div>
 		<div class="posts-text">
 			<div class="posts">
 				<div class="post1" onclick="changeToPage('portfolio');">
-					<div class="fita post1-fita"><img src="imagens/fita-amarela.png"></div>
-					<div class="post-img"><img src="imagens/post1-img.png"></div>
-					<span class="posts-categorias" id="post1-type">Animations</span>
+					<div class="tape post1-tape"><img src="images/yellow-tape.png"></div>
+					<div class="post-img"><img src="images/post1-img.png"></div>
+					<span class="posts-categories" id="post1-type">Animations</span>
 				</div>
 				<div class="post2" onclick="changeToPage('portfolio');">
-					<div class="fita post2-fita"><img src="imagens/fita-azul.png"></div>
-					<div class="post-img-alt"><img src="imagens/post2-img.png"></div>
-					<span class="posts-categorias-alt" id="post2-type">Graphic Design</span>
+					<div class="tape post2-tape"><img src="images/blue-tape.png"></div>
+					<div class="post-img-alt"><img src="images/post2-img.png"></div>
+					<span class="posts-categories-alt" id="post2-type">Graphic Design</span>
 				</div>
 				<div class="post3" onclick="changeToPage('portfolio');">
-					<div class="fita post3-fita"><img src="imagens/fita-amarela.png"></div>
-					<div class="post-img"><img src="imagens/post3-img.png"></div>
-					<span class="posts-categorias" id="post3-type">Video Editing</span>
+					<div class="tape post3-tape"><img src="images/yellow-tape.png"></div>
+					<div class="post-img"><img src="images/post3-img.png"></div>
+					<span class="posts-categories" id="post3-type">Video Editing</span>
 				</div>
 			</div>
-			<p class="p-categorias" id="posts-description"></p>
+			<p class="p-categories" id="posts-description"></p>
 		</div>
 	</div>
 
 	<div class="footer">
 		<p>Website made by&nbsp;<a href="https://www.linkedin.com/in/aritalcas/" target="_blank">Rita Silva</a></p>
 	</div>
+
 
 	<script src="script.js" type="text/javascript"></script>
 	<script type="text/javascript">window.onload = indexTranslate;</script>

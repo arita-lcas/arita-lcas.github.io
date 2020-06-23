@@ -1,10 +1,12 @@
-var obj = [{img: 'img9', div: 'popup-project9'}];
+
+
 
 function replaceSrc(elem, src) {
 	if (document.getElementById(elem).src != src){
 		document.getElementById(elem).src = src;
 	}
 }
+
 
 function showPopup(event) {
 	let projectId = 'popup-project' + realNumber(event.target.id);
@@ -16,86 +18,88 @@ function showPopup(event) {
 			break;
 		case 2:
 			replaceSrc("project2-iframe", "https://www.youtube.com/embed/fe4Cnj6lMVY");
-			replaceSrc("project2-img", "imagens/bates-motel.jpg");
+			replaceSrc("project2-img", "images/bates-motel.jpg");
 			break;
 	    case 3:
 	    	replaceSrc("project3-iframe", "https://www.youtube.com/embed/8qrXrWXwcFg");
 		  	break;
 	    case 4:
-	    	replaceSrc("project4-img", "imagens/rita-silva-gif.gif");
+	    	replaceSrc("project4-img", "images/rita-silva-gif.gif");
 	    	break;
 	    case 5:
-	    	replaceSrc("project5-img1", "imagens/cookies-packaging-1.jpg");
-	    	replaceSrc("project5-img2", "imagens/cookies-packaging-2.jpg");
+	    	replaceSrc("project5-img1", "images/cookies-packaging-1.jpg");
+	    	replaceSrc("project5-img2", "images/cookies-packaging-2.jpg");
 	    	break;
 	    case 6:
-	    	replaceSrc("project6-img1", "imagens/spacecamp1.jpg");
-	    	replaceSrc("project6-img2", "imagens/spacecamp2.jpg");
+	    	replaceSrc("project6-img1", "images/spacecamp1.jpg");
+	    	replaceSrc("project6-img2", "images/spacecamp2.jpg");
 	    	break;
 	    case 7:
-	    	replaceSrc("project7-img", "imagens/adoption-poster.jpg");
+	    	replaceSrc("project7-img", "images/adoption-poster.jpg");
 	    	break;
 	    case 8:
-	    	replaceSrc("project8-img", "imagens/aurora.jpg");
+	    	replaceSrc("project8-img", "images/aurora.jpg");
 	    	break;
 	    case 9:
-	    	replaceSrc("project9-img", "imagens/anne-green-gables.jpg");
+	    	replaceSrc("project9-img", "images/anne-green-gables.jpg");
 	    	break;
 	    case 10:
-	    	replaceSrc("project10-img1", "imagens/viriato1.jpg");
-	    	replaceSrc("project10-img2", "imagens/viriato2.jpg");
-	    	replaceSrc("project10-img3", "imagens/viriato3.jpg");
-	    	replaceSrc("project10-img4", "imagens/viriato4.jpg");
-	    	replaceSrc("project10-img5", "imagens/viriato5.jpg");
-	    	replaceSrc("project10-img6", "imagens/viriato6.jpg");
-	    	replaceSrc("project10-img7", "imagens/viriato7.jpg");
-	    	replaceSrc("project10-img8", "imagens/viriato8.jpg");
-	    	replaceSrc("project10-img9", "imagens/viriato9.jpg");
+	    	replaceSrc("project10-img1", "images/viriato1.jpg");
+	    	replaceSrc("project10-img2", "images/viriato2.jpg");
+	    	replaceSrc("project10-img3", "images/viriato3.jpg");
+	    	replaceSrc("project10-img4", "images/viriato4.jpg");
+	    	replaceSrc("project10-img5", "images/viriato5.jpg");
+	    	replaceSrc("project10-img6", "images/viriato6.jpg");
+	    	replaceSrc("project10-img7", "images/viriato7.jpg");
+	    	replaceSrc("project10-img8", "images/viriato8.jpg");
+	    	replaceSrc("project10-img9", "images/viriato9.jpg");
 	    	break;
 	    case 11:
-	    	replaceSrc("project11-img1", "imagens/boardgame1.jpg");
-	    	replaceSrc("project11-img2", "imagens/boardgame2.jpg");
-	    	replaceSrc("project11-img3", "imagens/boardgame3.jpg");
-	    	replaceSrc("project11-img4", "imagens/boardgame4.jpg");
-	    	replaceSrc("project11-img5", "imagens/boardgame5.jpg");
-	    	replaceSrc("project11-img6", "imagens/boardgame6.jpg");
-	    	replaceSrc("project11-img7", "imagens/boardgame7.jpg");
-	    	replaceSrc("project11-img8", "imagens/boardgame8.jpg");
-	    	replaceSrc("project11-img9", "imagens/boardgame9.jpg");
-	    	replaceSrc("project11-img10", "imagens/boardgame10.jpg");
-	    	replaceSrc("project11-img11", "imagens/boardgame11.jpg");
-	    	replaceSrc("project11-img12", "imagens/boardgame12.jpg");
-	    	replaceSrc("project11-img13", "imagens/boardgame13.jpg");
-	    	replaceSrc("project11-img14", "imagens/boardgame14.jpg");
-	    	replaceSrc("project11-img15", "imagens/boardgame15.jpg");
+	    	replaceSrc("project11-img1", "images/boardgame1.jpg");
+	    	replaceSrc("project11-img2", "images/boardgame2.jpg");
+	    	replaceSrc("project11-img3", "images/boardgame3.jpg");
+	    	replaceSrc("project11-img4", "images/boardgame4.jpg");
+	    	replaceSrc("project11-img5", "images/boardgame5.jpg");
+	    	replaceSrc("project11-img6", "images/boardgame6.jpg");
+	    	replaceSrc("project11-img7", "images/boardgame7.jpg");
+	    	replaceSrc("project11-img8", "images/boardgame8.jpg");
+	    	replaceSrc("project11-img9", "images/boardgame9.jpg");
+	    	replaceSrc("project11-img10", "images/boardgame10.jpg");
+	    	replaceSrc("project11-img11", "images/boardgame11.jpg");
+	    	replaceSrc("project11-img12", "images/boardgame12.jpg");
+	    	replaceSrc("project11-img13", "images/boardgame13.jpg");
+	    	replaceSrc("project11-img14", "images/boardgame14.jpg");
+	    	replaceSrc("project11-img15", "images/boardgame15.jpg");
 	    	break;
     	case 12:
-	    	replaceSrc("project12-img1", "imagens/stroller1.jpg");
-	    	replaceSrc("project12-img2", "imagens/stroller2.jpg");
-	    	replaceSrc("project12-img3", "imagens/stroller3.jpg");
-	    	replaceSrc("project12-img4", "imagens/stroller4.jpg");
-	    	replaceSrc("project12-img5", "imagens/stroller5.jpg");
-	    	replaceSrc("project12-img6", "imagens/stroller6.jpg");
-	    	replaceSrc("project12-img7", "imagens/stroller7.jpg");
-	    	replaceSrc("project12-img8", "imagens/stroller8.jpg");
-	    	replaceSrc("project12-img9", "imagens/stroller9.jpg");
+	    	replaceSrc("project12-img1", "images/stroller1.jpg");
+	    	replaceSrc("project12-img2", "images/stroller2.jpg");
+	    	replaceSrc("project12-img3", "images/stroller3.jpg");
+	    	replaceSrc("project12-img4", "images/stroller4.jpg");
+	    	replaceSrc("project12-img5", "images/stroller5.jpg");
+	    	replaceSrc("project12-img6", "images/stroller6.jpg");
+	    	replaceSrc("project12-img7", "images/stroller7.jpg");
+	    	replaceSrc("project12-img8", "images/stroller8.jpg");
+	    	replaceSrc("project12-img9", "images/stroller9.jpg");
 	    	break;
     	case 13:
-	    	replaceSrc("project13-img1", "imagens/handbag1.jpg");
-	    	replaceSrc("project13-img2", "imagens/handbag2.jpg");
+	    	replaceSrc("project13-img1", "images/handbag1.jpg");
+	    	replaceSrc("project13-img2", "images/handbag2.jpg");
 	    	break;
 	  	default:
 	    // code block
 	}
-	
+
 	project.removeAttribute('hidden');
 }
+
 
 function hidePopup(event) {
 	let projectId = 'popup-project' + realNumber(event.target.id);
 	let project = document.getElementById(projectId);
 	project.setAttribute('hidden',true);
 }
+
 
 function realNumber(numberString) {
 	let tmpString = "";
@@ -108,7 +112,6 @@ function realNumber(numberString) {
 }
 
 
-
 function disableScroll(event) {
 	document.body.style.overflow = 'hidden';
 	let popupClasses = document.getElementsByClassName('popup');
@@ -116,6 +119,7 @@ function disableScroll(event) {
 	    element.style.overflow = 'auto'
 	}
 }
+
 
 function enableScroll(event) {
 	let popupClasses = document.getElementsByClassName('popup');
@@ -127,14 +131,6 @@ function enableScroll(event) {
 	    element.style.overflow = 'hidden'
 	}
 }
-
-
-
-
-
-/*function portfolioTab() {
-	window.open("portfolio.html", "_self");
-}*/
 
 
 function contacts(element) {
@@ -154,6 +150,7 @@ function ignoreClick(event) {
 	event.stopPropagation();
 }
 
+
 function animateTag(event) {
 	if (event && event.target && event.target.id) {
 		let hoveredElem = document.getElementById(event.target.id);
@@ -163,6 +160,7 @@ function animateTag(event) {
 		}
 	}
 }
+
 
 function removeTagAnimation(event) {
 	if (event && event.target && event.target.id) {
@@ -179,7 +177,7 @@ function indexTranslate() {
 	let lang = urlParams.get("lang");
 
 	if (lang != "en") {
-		document.getElementById("home-header-index").innerHTML = "Início";
+		document.getElementById("lang-pt-index").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-index").innerHTML = "Portfólio";
 		document.getElementById("aboutme-header-index").innerHTML = "Sobre mim";
 		document.getElementById("contacts-header-index").innerHTML = "Contatos";
@@ -191,7 +189,7 @@ function indexTranslate() {
 		document.getElementById("post3-type").innerHTML = "Edição de Vídeo";
 		document.getElementById("posts-description").innerHTML = 'Pode observar mais detalhadamente os meus projetos&nbsp;<a class="p-link" onclick="changeToPage(\'portfolio\');">aqui.</a>';
 	} else {
-		document.getElementById("home-header-index").innerHTML = "Home";
+		document.getElementById("lang-en-index").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-index").innerHTML = "Portfolio";
 		document.getElementById("aboutme-header-index").innerHTML = "About me";
 		document.getElementById("contacts-header-index").innerHTML = "Contacts";
@@ -205,12 +203,13 @@ function indexTranslate() {
 	}
 }
 
+
 function portfolioTranslate() {
     let urlParams = new URLSearchParams(window.location.search);
 	let lang = urlParams.get("lang");
 
 	if (lang != "en") {
-    	document.getElementById("home-header-portfolio").innerHTML = "Início";
+		document.getElementById("lang-pt-portfolio").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-portfolio").innerHTML = "Portfólio";
 		document.getElementById("aboutme-header-portfolio").innerHTML = "Sobre mim";
 		document.getElementById("contacts-header-portfolio").innerHTML = "Contatos";
@@ -253,7 +252,7 @@ function portfolioTranslate() {
 		document.getElementById("project5-description").innerHTML = "Design conceptual de uma embalagem para bolachas premium.";
 		document.getElementById("project13-description").innerHTML = 'Mala baseada nos modelos da marca <a href="https://www.leathersatchel.com" target="_blank">The Leather Satchel Co</a>. Este design não foi criado por mim, e foi simplesmente utilizado como um exercício de modelação 3D, recorrendo ao software Marvelous Designer.';
 	} else {
-		document.getElementById("home-header-portfolio").innerHTML = "Home";
+		document.getElementById("lang-en-portfolio").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-portfolio").innerHTML = "Portfolio";
 		document.getElementById("aboutme-header-portfolio").innerHTML = "About me";
 		document.getElementById("contacts-header-portfolio").innerHTML = "Contacts";
@@ -298,12 +297,13 @@ function portfolioTranslate() {
 	}
 }
 
+
 function aboutTranslate() {
     let urlParams = new URLSearchParams(window.location.search);
 	let lang = urlParams.get("lang");
 
 	if (lang != "en") {
-    	document.getElementById("home-header-about").innerHTML = "Início";
+		document.getElementById("lang-pt-about").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-about").innerHTML = "Portfólio";
 		document.getElementById("aboutme-header-about").innerHTML = "Sobre mim";
 		document.getElementById("contacts-header-about").innerHTML = "Contatos";
@@ -312,8 +312,8 @@ function aboutTranslate() {
 		document.getElementById("about-description2").innerHTML = "Apesar de me ter licenciado em Design de Produto, rapidamente descobri que a área onde me sinto realmente enquadrada é Design Gráfico / Web.";
 		document.getElementById("about-description3").innerHTML = "Sou uma pessoa motivada e trabalhadora, pelo que estou constantemente a aprender novas competências para melhorar os meus projetos. Aliás, foi essa vontade de aprender cada vez mais que me levou a desenhar e programar este mesmo site.";
     	document.getElementById("skills-h1").innerHTML = "Competências Técnicas";
-    } else if (lang == "en") {
-    	document.getElementById("home-header-about").innerHTML = "Home";
+    } else {
+    	document.getElementById("lang-en-about").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-about").innerHTML = "Portfolio";
 		document.getElementById("aboutme-header-about").innerHTML = "About me";
 		document.getElementById("contacts-header-about").innerHTML = "Contacts";
@@ -325,22 +325,24 @@ function aboutTranslate() {
     }
 }
 
+
 function contactsTranslate() {
     let urlParams = new URLSearchParams(window.location.search);
 	let lang = urlParams.get("lang");
 
 	if (lang != "en") {
-    	document.getElementById("home-header-contacts").innerHTML = "Início";
+		document.getElementById("lang-pt-contacts").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-contacts").innerHTML = "Portfólio";
 		document.getElementById("aboutme-header-contacts").innerHTML = "Sobre mim";
 		document.getElementById("contacts-header-contacts").innerHTML = "Contatos";
     } else {
-    	document.getElementById("home-header-contacts").innerHTML = "Home";
+    	document.getElementById("lang-en-contacts").style.textDecoration = "underline";
 		document.getElementById("portfolio-header-contacts").innerHTML = "Portfolio";
 		document.getElementById("aboutme-header-contacts").innerHTML = "About me";
 		document.getElementById("contacts-header-contacts").innerHTML = "Contacts";
     }
 }
+
 
 function changeToPT() {
 	let urlParams = new URLSearchParams(window.location.search);
@@ -350,7 +352,6 @@ function changeToPT() {
 		window.location = window.location.pathname + "?lang=pt";
 	}
 }
-
 
 
 function changeToEN() {
@@ -373,16 +374,3 @@ function changeToPage(page){
 		window.location = page + ".html";
 	}
 }
-
-
-/*function changeToAbout(){
-	let urlParams = new URLSearchParams(window.location.search);
-	let lang = urlParams.get("lang");
-
-	if (lang) {
-		window.location = "about.html?lang="+lang;
-	} else {
-		window.location = "about.html";
-	}
-}*/
-

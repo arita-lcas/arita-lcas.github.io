@@ -3,21 +3,20 @@
 <head>
 	<title>Rita Silva - Contacts</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="imagens/favicon.jpg">
+	<link rel="icon" href="images/favicon.jpg">
 </head>
 
 <body>
 
 	<div class="header">
 		<div class="lang-selector">
-			<span class="lang-pt" onclick="changeToPT()">PT</span>
+			<span class="lang-pt" id="lang-pt-contacts" onclick="changeToPT()">PT</span>
 			<span class="lang-sep">|</span>
-			<span class="lang-en" onclick="changeToEN()">EN</span>
+			<span class="lang-en" id="lang-en-contacts" onclick="changeToEN()">EN</span>
 		</div>
 		<div class="header-wrapper">
+			<div class="home-header" onclick="changeToPage('index');"><img src="images/logo-alt3.png"></div>
 			<ul>
-				<li><a onclick="changeToPage('index');" id="home-header-contacts"></a></li>
-				<li>•</li>
 				<li><a onclick="changeToPage('portfolio');" id="portfolio-header-contacts"></a></li>
 				<li>•</li>
 				<li><a onclick="changeToPage('about');" id="aboutme-header-contacts"></a></li>
@@ -25,23 +24,23 @@
 				<li><a onclick="changeToPage('contacts');" id="contacts-header-contacts"></a></li>
 			</ul>
 		</div>
-		<div class="bolas"></div>
+		<div class="circles"></div>
 	</div>
 
 	<div class="contacts-group">
 		<div class="contacts">
 			<div class="contact1" onclick="contacts('behance');">
-				<div class="contact1-fita"><img src="imagens/fita-amarela.png"></div>
+				<div class="contact1-tape"><img src="images/yellow-tape.png"></div>
 				<span class="contacts-header">Behance</span>
 				<span class="contacts-text">behance.net<br>/aritalcas</span>
 			</div>
 			<div class="contact2" onclick="contacts('email');">
-				<div class="contact2-fita"><img src="imagens/fita-azul.png"></div>
+				<div class="contact2-tape"><img src="images/blue-tape.png"></div>
 				<span class="contacts-header">Email</span>
 				<span class="contacts-text">arita.lcas<br>@gmail.com</span>
 			</div>
 			<div class="contact3" onclick="contacts('linkedin');">
-				<div class="contact3-fita"><img src="imagens/fita-amarela.png"></div>
+				<div class="contact3-tape"><img src="images/yellow-tape.png"></div>
 				<span class="contacts-header">Linkedin</span>
 				<span class="contacts-text">linkedin.com/in<br>/aritalcas</span>
 			</div>
